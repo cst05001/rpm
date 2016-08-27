@@ -1,0 +1,5 @@
+#!/bin/bash
+./configure --prefix=/opt/opsbro/nginx
+CPU_N=`grep processor /proc/cpuinfo | wc -l`
+make -j $(($CPU_N + 1))
+make install DESTDIR=$DESTDIR

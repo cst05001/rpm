@@ -1,0 +1,15 @@
+default:
+    name: nginx
+    version: '1.8.0'
+    summary: A high performance web server and reverse proxy server
+    http: http://mirrors.sohu.com/nginx/nginx-1.8.0.tar.gz
+
+rpm:
+    arch: x86_64
+    release: 2.centos7
+    requires:
+        - glibc >= 2.17
+        - pcre >= 8.32
+        - openssl-libs >= 1.0.1e
+        - zlib >= 1.2.7
+        - nss-softokn-freebl >= 3.16.2.3 
